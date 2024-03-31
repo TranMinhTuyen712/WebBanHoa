@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layoout.master.cs" Inherits="WebBanHoa.Layoout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">SHOP HOA TƯƠI  </a>
+
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="XemHoa.aspx">Xem Hoa</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="TraCuu.aspx">Tra Cuu</a>
+                        </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="ThemHoa.aspx">Thêm Hoa</a>
+                        </li>
+                          </ul>
+               </nav>
+
+        <div style="min-height:500px" class="container mt-3">
+            <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+         <div class="bg-info text-center text-danger mb-0">
+     <marquee>
+     Thiết kế Bởi: Trần Minh Tuyền - 2221160020
+
+         </marquee>
+ </div>
+    </form>
+</body>
+</html>
